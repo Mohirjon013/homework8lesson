@@ -31,7 +31,7 @@
 // console.log(dontRepeatNumber(arr));
 
 // 4-task
-// let arr = [1, 2, 3, 4, 5, 6, 8, 8, 1];
+// let arr = [1, 2, 3, 4, 5, 6, 8, 8];
 
 // let max = arr[0];
 // let min = arr[0];
@@ -102,12 +102,12 @@
 
 // 14-task
 // let arr = [1,55,3,2,11,4]
-// let max = arr[0]
-// arr.forEach((value, index, arr) => {
+// let min = arr[0]
+// arr.filter((value, index, arr) => {
 //     if(index % 2 == 0){
-//         if(value > max){
-//             max = value
+//         if(value < min){
+//             min = value
 //         }
 //     }
 // })
-// console.log(max);
+// console.log(min);
