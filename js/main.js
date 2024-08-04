@@ -4,6 +4,15 @@
 // let arr = [55,3,2,11,3,4,6,7,12]
 // console.log(arr.sort((i,j) => i-j));
 
+// 2-task
+// let arr = [1,6,9,5,8,18,25]
+// function rangeSum(arr, startIndex, endIndex){
+//     let evenRes = 0
+//     const res = arr.slice(startIndex, endIndex + 1)
+//     res.forEach(value => evenRes += value);
+//     return evenRes
+// }
+// console.log(rangeSum(arr, 2 , 5));
 
 // 3-task
 // 1-way
@@ -31,22 +40,40 @@
 // console.log(dontRepeatNumber(arr));
 
 // 4-task
-// let arr = [1, 2, 3, 4, 5, 6, 8, 8];
+// 1-way
 
-// let max = arr[0];
-// let min = arr[0];
+// let arr = [10, 2, 3, 4, 5, 6, 8, 1022];
+// function findMaxMin(array){
+//     let min = array[0]
+//     let max = array[0]
+//     array.filter(value => {
+//         if(value < min){
+//             min = value
+//         }
+//         else{
+//             max = value
+//         }
+//     });
+//     console.log(`MAX: ${max}`);
+//     console.log(`MIN: ${min}`);
+// }
+// findMaxMin(arr)
 
-// arr.forEach(value => {
-//     if (value > max) {
-//         max = value;
+// 2-way
+
+// let arr = [1,2,3,4,5,6,8]
+// let max = arr[0]
+// let min = arr[0]
+// arr.filter(value => {    
+//     if(value > max){
+//         max = value
 //     }
-//     if (value < min) {
-//         min = value;
+//     else{
+//         min = value
 //     }
-// });
-
-// console.log("Max: ", max); 
-// console.log("Min: ", min); 
+// })
+// console.log(`MAX: ${max}`);
+// console.log(`MIN: ${min}`);
 
 // 6-task
 // let arr = [1,2,3,5,6,8]
@@ -64,30 +91,36 @@
 
 // 8-task
 // let arr = [2,3,4,5,7,6]
-// const res = arr.filter((value, index, arr) => {
-//     if(index % 2 != 0){
-//         return value
-//     }
-// })
+// const res = arr.filter((value, index, arr) => index % 2 != 0)
 // console.log(res);
 
 // 9-task
-// let arr = [2,3,4,5,7,15]
-// let max = arr[arr.length -1]
-// arr.forEach((value, index, arr) => {
-//     max = value
-    
-// })
-// console.log(max);
+// let arr = [2,3,4,25,7,15]
+// let max = [0]
+// function findMax(arr){
+//     arr.forEach((value, index, arr) => {
+//         if(index % 2 != 0){
+//             if(max < value){
+//                 max = value
+//             }
+//         }
+//     })
+//     console.log(max);
+// }
+// findMax(arr)
 
 // 11-task
-// let arr = [45,2,3,5,4,8,7,9]
-// const res = arr.filter(value => {
-//     if(value % 2 != 0){
-//         return value
-//     }
-// })
+// let arr = [1,2,3,4,5,6,7]
+// const res = arr.filter(value => value % 2 != 0)
 // console.log(res);
+
+// 12-task
+// let arr = [22,5,6,3,2]
+// let all = []
+// const res = arr.filter(value => {
+//     all.unshift(value)
+// })
+// console.log(all);
 
 // 13-task
 // let arr = [2,4,5,5,6,6,3,2,2]
